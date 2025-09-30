@@ -1,16 +1,22 @@
-# React + Vite
+**#React site via vite**
+The React application presents the basic concepts of the framework through interactive examples. The structure consists of two main sections:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Core Concepts – a list of key concepts (components, JSX, props, state), dynamically rendered based on data from the data.js file. Each element is displayed as a separate CoreConcept component.
 
-Currently, two official plugins are available:
+Examples – an interactive menu with buttons (TabButton) allowing you to select a topic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The selected button sets the selectedTopic state using the useState hook.
 
-## React Compiler
+After selection, the content section (tab-content) displays the title, description and sample code for the topic, retrieved from the EXAMPLES object.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+If the user does not select any topic, the application prompts with the message: ‘Please select a topic.’
 
-## Expanding the ESLint configuration
+The whole thing creates a simple but functional educational application demonstrating the use of:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Functional components
+
+The useState hook for state management
+
+Props and dynamic list rendering
+
+Conditional content rendering in React
